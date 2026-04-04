@@ -131,3 +131,5 @@ Avant de commencer, assurez-vous d'avoir installé sur vos postes :
 
 ---
 
+<img width="720" height="726" alt="image" src="https://github.com/user-attachments/assets/c46e6101-b1b2-4311-a553-120e0a701d83" />
+

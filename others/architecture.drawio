@@ -1,0 +1,87 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="smphg6jnKciRmvxmmXUE">
+    <mxGraphModel dx="2140" dy="1567" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="R9v_WZNhnK40snGu62wk-6" edge="1" parent="1" source="R9v_WZNhnK40snGu62wk-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="R9v_WZNhnK40snGu62wk-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R9v_WZNhnK40snGu62wk-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="FRONT" vertex="1">
+          <mxGeometry height="100" width="220" x="40" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="R9v_WZNhnK40snGu62wk-8" edge="1" parent="1" source="R9v_WZNhnK40snGu62wk-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="R9v_WZNhnK40snGu62wk-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R9v_WZNhnK40snGu62wk-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="BDD" vertex="1">
+          <mxGeometry height="100" width="220" x="620" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="R9v_WZNhnK40snGu62wk-10" edge="1" parent="1" source="R9v_WZNhnK40snGu62wk-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="R9v_WZNhnK40snGu62wk-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R9v_WZNhnK40snGu62wk-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;rounded=0;" value="Dockerfile" vertex="1">
+          <mxGeometry height="80" width="80" x="110" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="R9v_WZNhnK40snGu62wk-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;rounded=0;" value="Dockefile" vertex="1">
+          <mxGeometry height="80" width="80" x="690" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="R9v_WZNhnK40snGu62wk-9" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Permet de configurer et install tout ce qu&#39;il faut sur l&#39;image" vertex="1">
+          <mxGeometry height="60" width="120" x="90" y="-40" as="geometry" />
+        </mxCell>
+        <mxCell id="R9v_WZNhnK40snGu62wk-13" edge="1" parent="1" source="R9v_WZNhnK40snGu62wk-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="R9v_WZNhnK40snGu62wk-12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R9v_WZNhnK40snGu62wk-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="Docker compose" vertex="1">
+          <mxGeometry height="80" width="80" x="260" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="R9v_WZNhnK40snGu62wk-12" parent="1" style="whiteSpace=wrap;html=1;" value="Définit où sont les autres conteneurs (pas que)" vertex="1">
+          <mxGeometry height="60" width="120" x="240" y="-30" as="geometry" />
+        </mxCell>
+        <mxCell id="R9v_WZNhnK40snGu62wk-14" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="Microservice" vertex="1">
+          <mxGeometry height="80" width="80" x="210" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="R9v_WZNhnK40snGu62wk-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="550" width="280" x="-1270" as="geometry" />
+        </mxCell>
+        <mxCell id="R9v_WZNhnK40snGu62wk-15" parent="1" style="label;whiteSpace=wrap;html=1;image=img/clipart/Gear_128x128.png;align=center;" value="Front" vertex="1">
+          <mxGeometry height="60" width="210" x="-1230" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="R9v_WZNhnK40snGu62wk-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="550" width="690" x="-900" as="geometry" />
+        </mxCell>
+        <mxCell id="R9v_WZNhnK40snGu62wk-18" parent="1" style="label;whiteSpace=wrap;html=1;image=img/clipart/Gear_128x128.png;align=center;fontSize=15;" value="Back" vertex="1">
+          <mxGeometry height="60" width="520" x="-827" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="R9v_WZNhnK40snGu62wk-27" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1140" y="210" as="sourcePoint" />
+            <mxPoint x="-1140" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qd17S7HkR3qDeiJ0BLCM-4" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="API Express (Node.js)" vertex="1">
+          <mxGeometry height="100" width="180" x="-827" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="Z6peupmtbHS87moSYFFu-1" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ORM : Object-Relational Mapping : outil qui fait traduction entre code et base de donnée. Au lieu décrire des requêtes sensibles à la casse, on utilise des fonctions&amp;nbsp;" vertex="1">
+          <mxGeometry height="130" width="230" x="-820" y="-200" as="geometry" />
+        </mxCell>
+        <mxCell id="Z6peupmtbHS87moSYFFu-2" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="POSTGRE&lt;div&gt;SQL&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="83" x="-455" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="Z6peupmtbHS87moSYFFu-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="ORM : PRISMA" vertex="1">
+          <mxGeometry height="60" width="120" x="-615" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="Z6peupmtbHS87moSYFFu-5" edge="1" parent="1" source="Z6peupmtbHS87moSYFFu-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="qd17S7HkR3qDeiJ0BLCM-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z6peupmtbHS87moSYFFu-6" connectable="0" parent="Z6peupmtbHS87moSYFFu-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Requête HTTP" vertex="1">
+          <mxGeometry relative="1" x="-0.0038" y="-5" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z6peupmtbHS87moSYFFu-4" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="React" vertex="1">
+          <mxGeometry height="60" width="120" x="-1220" y="260" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

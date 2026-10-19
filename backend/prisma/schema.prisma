@@ -13,8 +13,45 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Planes {
-  id Int @id @default(autoincrement())
-  immatriculation String
-  model String
+enum PlaneStatus {
+  // enum = des "labels" ou "étiquettes" fixes, pas de "String"
+  ACTIVE
+  GROUNDED
+  MAINTENANCE
+  IN_FLIGHT
+}
+
+enum UserRole {
+  CUSTOMER
+  PILOT
+  ADMINISTRATOR
+}
+
+model Plane {
+  id                Int         @id @default(autoincrement())
+  immatriculation   String      @unique
+  model             String
+  manufactureYear   Int         @map("manufactured_year")
+  tankCapacity      Int         @map("tank_capacity")
+  speed             Decimal
+  passengerCapacity Int         @map("passenger_capacity")
+  maxDistance       Decimal     @map("max_distance")
+  planeCost         Decimal     @map("plane_cost")
+  status            PlaneStatus @default(ACTIVE)
+  createdAt         DateTime    @default(now()) @map("created_at")
+  updatedAt         DateTime    @map("updated_at")
+
+  @@map("planes")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  role      UserRole // à consolider plus tard (customer VS pilot etc...)
+  firstName String   @map("first_name")
+  lastName  String   @map("last_name")
+  email     String   @unique
+  password  String
+  phone     String
+
+  @@map("users")
 }

@@ -21,3 +21,6 @@ npx prisma migrate [env] -- name [commentaire]
 ## Interface graphique 
 npx prisma studio
 
+## Envoyer le jeu de données d'exemple
+npx prisma db seed
+

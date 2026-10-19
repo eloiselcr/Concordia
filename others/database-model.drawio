@@ -1,6 +1,6 @@
 <mxfile host="Electron">
   <diagram name="Page-1" id="jIhspF_CABPVfrMYtxcc">
-    <mxGraphModel dx="1511" dy="982" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1724" dy="1157" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -620,6 +620,12 @@
             <mxRectangle height="30" width="150" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="hAjealELeVHdRON2I_Hi-2" edge="1" parent="8aEreDxR-qz0ej_3LP_D-228" source="8aEreDxR-qz0ej_3LP_D-232" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;fillColor=#f8cecc;strokeColor=light-dark(#b30600, #d7817e);strokeWidth=7;exitX=0;exitY=0.833;exitDx=0;exitDy=0;exitPerimeter=0;" target="8aEreDxR-qz0ej_3LP_D-228" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="98" y="279" as="sourcePoint" />
+            <mxPoint x="408" y="101" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="8aEreDxR-qz0ej_3LP_D-251" edge="1" parent="1" source="8aEreDxR-qz0ej_3LP_D-241" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=none;endFill=0;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;startArrow=ERmany;startFill=0;" target="8aEreDxR-qz0ej_3LP_D-114" value="">
           <mxGeometry height="100" relative="1" width="100" as="geometry">
             <mxPoint x="340" y="251" as="sourcePoint" />
@@ -649,6 +655,21 @@
         </mxCell>
         <mxCell id="8aEreDxR-qz0ej_3LP_D-277" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;fillColor=#bac8d3;strokeColor=#23445d;" value="&lt;font style=&quot;color: rgb(153, 51, 255); font-size: 13px;&quot;&gt;1 aéroport peut avoir plusieurs départs mais 1 départ n&#39;a qu&#39;un aéroport final&lt;br&gt;1 aéroport peut avoir plusieurs arrivées mais 1 arrivée n&#39;a qu&#39;un aéroport final&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(103, 171, 159); font-size: 13px;&quot;&gt;1 rôle peut être attribuée à plusieurs users, mais 1 user n&#39;a qu&#39;un rôle&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(51, 153, 255); font-size: 13px;&quot;&gt;1 avion peut avoir plusieurs vols, mais un vol est attribué qu&#39;a 1 avion&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 204, 0); font-size: 13px;&quot;&gt;1 pilote peut avoir plusieurs vols mais un vol n&#39;a que 1 pilote&lt;br&gt;1 réservation ne peut avoir qu&#39;un vol attribué, et 1 vol attribué est lié à 1 réservation&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 255, 0); font-size: 13px;&quot;&gt;1 user peut avoir plusieurs réservations, mais 1 réservation n&#39;est attribuée qu&#39;à 1 user&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="140" width="501" x="330.5" y="634" as="geometry" />
+        </mxCell>
+        <mxCell id="hAjealELeVHdRON2I_Hi-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#6F0000;fillColor=#a20025;align=center;verticalAlign=middle;rounded=0;fontColor=#ffffff;" value="Mettre à jour" vertex="1">
+          <mxGeometry height="52" width="93" x="211" y="47" as="geometry" />
+        </mxCell>
+        <mxCell id="hAjealELeVHdRON2I_Hi-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#6F0000;fillColor=#a20025;align=center;verticalAlign=middle;rounded=0;fontColor=#ffffff;" value="Mettre à jour" vertex="1">
+          <mxGeometry height="52" width="93" x="1073" y="390.71" as="geometry" />
+        </mxCell>
+        <mxCell id="hAjealELeVHdRON2I_Hi-6" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;verticalAlign=top;align=left;fontStyle=1;fontSize=21;" value="IDÉES" vertex="1">
+          <mxGeometry height="209" width="376" x="1190" y="628" as="geometry" />
+        </mxCell>
+        <mxCell id="hAjealELeVHdRON2I_Hi-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;2°)&lt;/b&gt; faire une base pour les clients et une base pour les users &quot;pro&quot; de la plateforme (admin, pilotes)..." vertex="1">
+          <mxGeometry height="70" width="231" x="1278" y="764" as="geometry" />
+        </mxCell>
+        <mxCell id="hAjealELeVHdRON2I_Hi-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;1°)&lt;/b&gt; passage d&#39;un enum pour rôle&lt;div&gt;enum = un utilisateur ne peut avoir qu&#39;un rôle&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;idée pour plus tard, utiliser un tableau de string qui me permettrait d&#39;attribuer plusieurs rôles à un user&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="229" x="1268" y="679" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

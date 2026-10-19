@@ -1,7 +1,8 @@
 const { PrismaClient } = require('@prisma/client');
 const express = require('express');
+const swaggerJSDoc = require('swagger-jsdoc');
 
-const routeur = express.Router()
+const routeur = express.Router();
 const prisma = new PrismaClient();
 
 /*
@@ -10,19 +11,116 @@ ROUTE GET
 =========================================
 */
 
-routeur.get('/api/planes', async (req,res) => {
+
+routeur.get('/api/planes', async (req, res) => {
     /*
-    R1-G : Retourne tous les avions dans la base
+   Find_All_Planes : Retourne tous les avions dans la base.
+   */
+    try {
+        const planes = await prisma.planes.findMany();
+        res.json(planes);
+    } catch (error) {
+        res.status(500).json({ error: "Impossible de récupérer les avions" });
+    }
+});
+
+/**
+ * @swagger
+ * /api/planes:
+ *   get:
+ *     summary: Liste tous les avions
+ *     description: Retourne la liste complète de tous les avions enregistrés dans la base.
+ *     tags:
+ *       - Planes
+ *     responses:
+ *       200:
+ *         description: Liste des avions récupérée avec succès
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 type: object
+ *                 properties:
+ *                   id:
+ *                     type: integer
+ *                     example: 1
+ *                   mimmatriculation:
+ *                     type: string
+ *                     example: F-GCAV
+ *                   model:
+ *                     type: string
+ *                     example: Airbus A330-200
+ *       500:
+ *         description: Erreur interne du serveur
+ */
+
+
+routeur.get('/api/planes/:id', async (req, res) => {
+    /*
+    Find_By_ID : Retourne toutes les informations d'un avion en indiquant son id.
     */
-    const plane = await prisma.planes.findMany()
+    const id_recuperer = parseInt(req.params.id);
+    const plane = await prisma.planes.findMany({
+        where: ({
+            id: id_recuperer
+        })
+    });
     res.json(plane)
-})
+});
+
+/**
+ * @swagger
+ * /api/planes/{id}:
+ *   get:
+ *     summary: Récupère les informtions d'un avion par son id.
+ *     description: Retourne toutes les informations d'un avion en indiquant son identifiant unique.
+ *     tags:
+ *       - Planes
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         description: ID numérique de l'avion
+ *         schema:
+ *           type: integer
+ *           example: 1
+ *     responses:
+ *       200:
+ *         description: Détails de l'avion récupéré
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 id:
+ *                   type: integer
+ *                   example: 1
+ *                 model:
+ *                   type: string
+ *                   example: Airbus A320
+ *                 capacity:
+ *                   type: integer
+ *                   example: 180
+ *       404:
+ *         description: Avion non trouvé
+ *       500:
+ *         description: Erreur serveur
+ */
+
+
+/*
+=========================================
+ROUTE POST
+=========================================
+*/
+
 
 routeur.post('/api/planes', async (req, res) => {
     const plane = await prisma.planes.create({
-        data:{
+        data: {
             immatriculation: "CLE-MENT",
-            model:"Turbo bibite"
+            model: "Turbo bibite"
         }
     });
     res.json(plane)
@@ -34,39 +132,23 @@ routeur.delete('/api/planes/:id', async (req, res) => {
     const id_recuperer = parseInt(req.params.id);
     try {
         const plane = await prisma.planes.delete({
-        where:{
-            id: id_recuperer
-        }
-    });
-    res.status(204).json()
-    
+            where: {
+                id: id_recuperer
+            }
+        });
+        res.status(204).json()
+
     } catch (error) {
         res.status(500).json(error)
     }
 });
 
 
-/*
-routeur.get('/api/planes/id', async (req, res) => {
-    const plane = await prisma.planes.findMany({
-        where:({
-            id: 19
-        })
-    });
-    res.json(plane)
-});
-*/
+
+
 
 /*
-routeur.get('/api/planes/:id', async (req, res) => {
-    const id_recuperer = parseInt(req.params.id);
-    const plane = await prisma.planes.findMany({
-        where:({
-            id: id_recuperer
-        })
-    });
-    res.json(plane) 
-});
+
 */
 
 routeur.patch('/api/planes/:id', async (req, res) => {
@@ -77,21 +159,21 @@ routeur.patch('/api/planes/:id', async (req, res) => {
     console.log(modification)
     try {
         const plane = await prisma.planes.update({
-            where:({
+            where: ({
                 id: id_recuperer
             }),
             data: modification
-    });
+        });
 
-    res.status(200).json(plane)
+        res.status(200).json(plane)
 
     } catch (error) {
-        
+
     }
 
 
 });
- 
+
 
 
 
@@ -113,13 +195,13 @@ routeur.post('/api/planes/post', async (req, res) => {
     */
 
     try {
-    const InsertNewPlane = await prisma.planes.create({
-        data: DataNewPlane
-    });
-    console.log(InsertNewPlane)
-    res.json(DataNewPlane)
+        const InsertNewPlane = await prisma.planes.create({
+            data: DataNewPlane
+        });
+        console.log(InsertNewPlane)
+        res.json(DataNewPlane)
     }
-    catch(error_lama){
+    catch (error_lama) {
         console.log(error_lama)
         res.status(400).json()
     }
